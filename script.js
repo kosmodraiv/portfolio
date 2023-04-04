@@ -22,7 +22,7 @@ if(ScrollTrigger.isTouch !== 1){
     let itemsL = gsap.utils.toArray('.gallery__left .gallery__item')
 
     itemsL.forEach(item => {
-        gsap.fromTo(item, { x: -100, opacity: 0}, {
+        gsap.fromTo(item, { x: -50, opacity: 0}, {
             opacity: 1, x: 0,
             scrollTrigger: {
                 trigger: item,
@@ -37,7 +37,7 @@ if(ScrollTrigger.isTouch !== 1){
     let itemsR = gsap.utils.toArray('.gallery__right .gallery__item')
 
     itemsR.forEach(item => {
-        gsap.fromTo(item, { x: 100, opacity: 0}, {
+        gsap.fromTo(item, { x: 50, opacity: 0}, {
             opacity: 1, x: 0,
             scrollTrigger: {
                 trigger: item,
